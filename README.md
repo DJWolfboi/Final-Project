@@ -14,7 +14,7 @@ Este es un proyecto de aplicación web desarrollado en Flask para la administrac
 - REST Client (para pruebas con archivos `.rest`)
 
 ## 📁 Estructura del Proyecto
-
+```
 📦 final_project/
 ├── run.py
 ├── config.py
@@ -52,7 +52,7 @@ Este es un proyecto de aplicación web desarrollado en Flask para la administrac
 │ └── static/
 │ └── css/
 │ └── styles.css (opcional)
-
+```
 
 ## 👥 Roles de usuario
 
