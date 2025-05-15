@@ -1,0 +1,4 @@
+### Obtener evento por ID (GET)
+
+GET http://localhost:5000/eventos/1
+Content-Type: application/json

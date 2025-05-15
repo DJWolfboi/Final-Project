@@ -1,0 +1,11 @@
+### Editar un evento (POST)
+
+# Simular POST con nuevos datos del evento
+
+PUT http://localhost:5000/eventos/4
+Content-Type: application/json
+
+{
+  "titulo": "Evento actualizado",
+  "descripcion": "Nueva descripción actualizada"
+}

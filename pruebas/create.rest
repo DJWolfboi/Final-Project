@@ -1,0 +1,13 @@
+### Crear un nuevo evento (POST)
+
+POST http://localhost:5000/eventos
+Content-Type: application/json
+
+{
+  "nombre": "Evento de Prueba",
+  "ubicacion": "Arecibo",
+  "fecha_hora": "2025-05-14T16:00",
+  "capacidad": 50,
+  "descripcion": "Prueba REST",
+  "organizador_id": 1
+}

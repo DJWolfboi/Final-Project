@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block title %}{{ editar and "Edit Event" or "New
+Course" }}{% endblock %} {% block content %}
+<h2 class="mb-4">{{ editar and "Edit Event" or "New Event" }}</h2>
+
+<form method="POST" novalidate>
+  {{ form.hidden_tag() }}
+
+  <!-- Event name -->
+  <div class="mb-3">
+    {{ form.nombre.label(class="form-label") }} {{
+    form.nombre(class="form-control", placeholder="Enter event name") }}
+  </div>
+
+<!-- Event Location -->
+<div class="mb-3">
+  {{form.ubicacion.label(class="form-label")}} {{form.ubicacion(class="form-control", placeholder="Enter event location")}}
+</div>
+
+  <!-- Event Date -->
+<div class="mb-3">
+  {{form.fecha_hora.label(class="form-label")}} 
+  {{form.fecha_hora(class="form-control", type="datetime-local")}} 
+  {% for error in form.fecha_hora.errors %}
+  <div class="text-danger">{{ error }}</div>
+  {% endfor %}
+</div>
+
+<!-- Event Capacity -->
+<div class="mb-3">
+  {{form.capacidad.label(class="form-label")}} {{form.capacidad(class="form-control", placeholder="Enter event capacity")}}
+</div>
+
+  <!-- Event Description -->
+  <div class="mb-3">
+    {{form.descripcion.label(class="form-label") }} {{
+    form.descripcion(class="form-control", placeholder="Enter event
+    description") }}
+  </div>
+
+  <!-- Submit Button -->
+  <div class="mb-3">{{ form.submit(class="btn btn-primary") }}</div>
+</form>
+{% endblock %}
