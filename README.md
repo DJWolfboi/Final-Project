@@ -94,7 +94,7 @@ cd Final-Project
 
 4.Configura tu base de datos en config.py.
 
-5.Crea la base de datos en MYSQL:
+5.Crear la base de datos en MYSQL:
 ```
 mysql -u root -p < database_schema/04_eventos.sql
 ```
